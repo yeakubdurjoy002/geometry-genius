@@ -11,14 +11,55 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <header></header>
+  <body class="md:m-5 lg:m-10">
+    <header>
+      <div class="navbar bg-base-100 bg-red-100 rounded-md">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li>
+                <a>Contact</a>
+                <ul class="p-2">
+                  <li><a>Mail Us</a></li>
+                </ul>
+              </li>
+              <li><a>Support</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">Interactive Geometry Genius </a>
+        </div>
+
+        <div class="navbar-end">
+          <a class="btn">Blog</a>
+        </div>
+      </div>
+    </header>
     <main>
       <!-- Main content container -->
       <div class="flex justify-between">
         <!-- Shape card container -->
         <div
-          class="flex-1 flex-col md:grid-cols-2 grid lg:grid-cols-3 mt-10 mb-10"
+          class="sm:grid-cols-1 gap-5 md:grid-cols-2 grid lg:grid-cols-3 mt-10 mb-10"
         >
           <!-- Triangle card -->
           <div class="bg-base-100 w-64 shadow-xl p-5 rounded-lg ml-4">
@@ -191,7 +232,7 @@
 
         <!-- Area calculation container -->
         <div
-          class="w-96 border-2 border-gray-600 rounded-md text-center p-5 mt-10"
+          class="lg:w-72 border-2 border-gray-600 rounded-md text-center p-5 mt-10"
         >
           <h3 class="text-3xl">Area Calculation</h3>
         </div>
